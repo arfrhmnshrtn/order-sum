@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: url(Asset/pattern-background-desktop.svg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    display: grid;
+    place-items: center;
+}
+.container{
+    background-color: #fff;
+    width: 400px;
+    height: auto;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 20px;
+    box-shadow: 10px 10px 50px 10px rgba(0,0,0,0.1);
+}
+.container .banner img{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+.hero .judul{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 20px;
+}
+.hero .text{
+    font-size: 1rem;
+    color: rgba(0,0,0,0.5);
+    text-align: center;
+    padding: 0 30px;
+    margin-bottom: 20px;
+}
+.hero .harga{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    background-color: rgb(243, 246, 255);
+    margin: 0 50px;
+    border-radius: 5px;
+}
+.hero .harga .icon img{
+    margin-top: 5px;
+    padding: 0 8px;
+}
+.hero .harga a{
+    transition: all .5s ease;
+}
+.harga a:hover, .cancel a:hover{
+    text-decoration: none;
+}
+.hero .tentang{
+    flex: 1;
+    margin-left: 5px;
+}
+.hero .tentang p{
+    color: rgba(0,0,0,0.5);
+}
+.hero a{
+    margin-right: 5px;
+}
+.btn{
+    display: grid;
+    place-items: center;
+    margin-top: 20px;
+    
+}
+.btn button{
+    border: 1px solid rgb(140, 90, 205);
+    background: rgb(140, 90, 205);
+    text-align: center;
+    padding: 10px 20px;
+    width: 300px;
+    color: #fff;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.btn button:hover{
+    background: rgba(140, 90, 205, 0.9);
+}
+.cancel{
+    text-align: center;
+    margin: 10px 0 30px 0;
+}
+.cancel a{
+    margin: 10px;
+    padding: 20px;
+}
+
+/* mobile */
+@media screen and (max-width: 500px){
+    body{
+        background: url(Asset/pattern-background-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .container{
+        width: auto;
+        margin: 20px 15px;
+    }
+}
